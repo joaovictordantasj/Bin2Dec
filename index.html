@@ -13,13 +13,16 @@
       <div class="container-sm">
         <h1>Bin2Dec Challenge</h1>
         
-        <input type="text" class="form-control" placeholder="Enter a binary number here..." maxlength="8" style="width: fit-content" autofocus>
+        <input type="text" class="form-control" placeholder="Enter a binary number here..." maxlength="8" style="width: fit-content" oninput="convert(value)" autofocus>
 
         <div class="result">
           <h5 style="color: #50fa7b">Result: </h5>
         </div>
+        <div class="warning"></div>
       </div>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
