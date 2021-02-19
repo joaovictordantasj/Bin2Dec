@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <title>Bin2Dec</title>
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      background: url('https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHRlY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+      background-repeat: no-repeat;
+      background-size: cover;
+      backdrop-filter: blur(5px);
+      height: 100%;
+      color: #fafafa;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      zoom: 2;
+    }
+  </style>
 </head>
 <body>
   <div class="row h-100" style="margin:0;">
@@ -15,10 +35,10 @@
         
         <input type="text" class="form-control" placeholder="Enter a binary number here..." maxlength="8" style="width: fit-content" oninput="convert(value)" autofocus>
 
-        <div class="result">
+        <div class="result" style="margin-top: 10px;">
           <h5 style="color: #50fa7b">Result: </h5>
         </div>
-        <div class="warning"></div>
+        <div class="warning" style="margin-top: 10px;"></div>
       </div>
     </div>
   </div>
